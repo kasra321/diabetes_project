@@ -1,0 +1,28 @@
+Here's the correct order for performing the tasks:
+
+- Missing ratios:
+    Start by calculating the missing ratios to understand the extent of missing data in each feature. 
+
+- Target distribution:
+    Analyze the distribution of the target variable to understand its characteristics and balance.
+- Basic Statistical Analysis:
+    Perform basic statistical analysis (e.g., mean, median, standard deviation) to get an overview of the data.
+- Feature design (hx_preg, full_workup):
+    Create new features such as hx_preg (history of pregnancy) and full_workup (indicator for missing data) based on domain knowledge.
+- msno barplot and corr heatmap:
+    Visualize the missing data patterns using a msno barplot and explore correlations among features with a correlation heatmap.
+- missing data chi_square contingency:
+    Perform a chi-square contingency test to investigate the relationship between missing data across different features.
+- Histogram/qq-plot:
+    Generate histograms and Q-Q plots to visually inspect the distribution of each feature and assess normality.
+-splitting:
+    Split the data into training and test sets to avoid data leakage during the subsequent steps.
+    
+- imputation:
+    Impute missing values in the training set using an appropriate imputation method and apply the same imputation to the test set based on the training data.
+- normalization test:
+    Conduct tests (e.g., Shapiro-Wilk, Anderson-Darling) on the training set to determine if normalization is required.
+- apply normalization method:
+    Apply the chosen normalization method to the training set and use the same parameters to normalize the test set.
+- feature heat map:
+    Finally, after all preprocessing steps, generate a feature heat map to visualize the relationships between features in their final form.
